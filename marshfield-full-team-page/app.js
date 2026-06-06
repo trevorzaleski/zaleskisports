@@ -1,0 +1,750 @@
+
+const data = {
+  "schedule": [
+    {
+      "date": "Tue, Dec 2",
+      "opponent": "Appleton East",
+      "site": "Away",
+      "location": "Appleton East",
+      "result": "W",
+      "score": "81-59",
+      "conference": false
+    },
+    {
+      "date": "Fri, Dec 5",
+      "opponent": "La Crosse Central",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "L",
+      "score": "46-50",
+      "conference": false
+    },
+    {
+      "date": "Fri, Dec 12",
+      "opponent": "Wisconsin Rapids Lincoln",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "W",
+      "score": "73-54",
+      "conference": true
+    },
+    {
+      "date": "Sat, Dec 13",
+      "opponent": "Hudson",
+      "site": "Away",
+      "location": "Hudson High School",
+      "result": "W",
+      "score": "57-44",
+      "conference": false
+    },
+    {
+      "date": "Tue, Dec 16",
+      "opponent": "Eau Claire North",
+      "site": "Away",
+      "location": "Eau Claire North High School",
+      "result": "W",
+      "score": "91-65",
+      "conference": false
+    },
+    {
+      "date": "Fri, Dec 19",
+      "opponent": "D.C. Everest",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "W",
+      "score": "70-64",
+      "conference": true
+    },
+    {
+      "date": "Tue, Dec 23",
+      "opponent": "River Falls",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "W",
+      "score": "56-46",
+      "conference": false
+    },
+    {
+      "date": "Mon, Dec 29",
+      "opponent": "Waunakee",
+      "site": "Neutral",
+      "location": "Waunakee High School",
+      "result": "W",
+      "score": "66-47",
+      "conference": false,
+      "note": "Ab Nicholas Holiday Classic"
+    },
+    {
+      "date": "Tue, Dec 30",
+      "opponent": "Madison West",
+      "site": "Neutral",
+      "location": "Waunakee High School",
+      "result": "L",
+      "score": "52-62",
+      "conference": false,
+      "note": "Ab Nicholas Holiday Classic - Championship Game"
+    },
+    {
+      "date": "Sat, Jan 3",
+      "opponent": "Neenah",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "W",
+      "score": "57-45",
+      "conference": false
+    },
+    {
+      "date": "Fri, Jan 9",
+      "opponent": "Stevens Point",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "W",
+      "score": "54-47",
+      "conference": true,
+      "note": "Postponed from 1/6/26"
+    },
+    {
+      "date": "Tue, Jan 13",
+      "opponent": "Eau Claire Memorial",
+      "site": "Away",
+      "location": "Eau Claire Memorial High School",
+      "result": "W",
+      "score": "74-53",
+      "conference": false
+    },
+    {
+      "date": "Fri, Jan 16",
+      "opponent": "Wausau West",
+      "site": "Away",
+      "location": "Wausau West High School",
+      "result": "W",
+      "score": "55-39",
+      "conference": true
+    },
+    {
+      "date": "Sat, Jan 17",
+      "opponent": "Kaukauna",
+      "site": "Neutral",
+      "location": "La Crosse Center",
+      "result": "W",
+      "score": "69-53",
+      "conference": false,
+      "note": "Midwest Players Classic"
+    },
+    {
+      "date": "Tue, Jan 27",
+      "opponent": "Merrill",
+      "site": "Away",
+      "location": "Merrill High School",
+      "result": "W",
+      "score": "101-52",
+      "conference": false
+    },
+    {
+      "date": "Fri, Jan 30",
+      "opponent": "Wisconsin Rapids Lincoln",
+      "site": "Away",
+      "location": "Lincoln High School",
+      "result": "W",
+      "score": "68-37",
+      "conference": true
+    },
+    {
+      "date": "Tue, Feb 3",
+      "opponent": "Holmen",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "W",
+      "score": "88-53",
+      "conference": false
+    },
+    {
+      "date": "Fri, Feb 6",
+      "opponent": "D.C. Everest",
+      "site": "Away",
+      "location": "D.C. Everest Senior High School",
+      "result": "L",
+      "score": "77-82",
+      "conference": true
+    },
+    {
+      "date": "Sat, Feb 7",
+      "opponent": "Brookfield Central",
+      "site": "Neutral",
+      "location": "Oshkosh Arena",
+      "result": "L",
+      "score": "56-66",
+      "conference": false
+    },
+    {
+      "date": "Tue, Feb 10",
+      "opponent": "Chippewa Falls",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "W",
+      "score": "75-37",
+      "conference": false
+    },
+    {
+      "date": "Fri, Feb 13",
+      "opponent": "Stevens Point",
+      "site": "Away",
+      "location": "Stevens Point Area Senior High School",
+      "result": "L",
+      "score": "54-59",
+      "conference": true
+    },
+    {
+      "date": "Wed, Feb 18",
+      "opponent": "Wausau East",
+      "site": "Away",
+      "location": "Wausau East High School",
+      "result": "W",
+      "score": "80-69",
+      "conference": true,
+      "note": "Postponed from 1/23/26"
+    },
+    {
+      "date": "Fri, Feb 20",
+      "opponent": "Wausau West",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "W",
+      "score": "62-45",
+      "conference": true
+    },
+    {
+      "date": "Thu, Feb 26",
+      "opponent": "Wausau East",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "W",
+      "score": "75-38",
+      "conference": true
+    },
+    {
+      "date": "Fri, Mar 6",
+      "opponent": "Appleton West",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "W",
+      "score": "68-47",
+      "conference": false,
+      "note": "D1 Sectional 1 Regional Semifinal"
+    },
+    {
+      "date": "Sat, Mar 7",
+      "opponent": "Wausau West",
+      "site": "Home",
+      "location": "Marshfield High School",
+      "result": "W",
+      "score": "74-35",
+      "conference": false,
+      "note": "D1 Sectional 1 Regional Final"
+    },
+    {
+      "date": "Thu, Mar 12",
+      "opponent": "Appleton North",
+      "site": "Neutral",
+      "location": "Stevens Point Area Senior High School",
+      "result": "L",
+      "score": "45-63",
+      "conference": false,
+      "note": "D1 Sectional 1 Sectional Semifinal"
+    }
+  ],
+  "roster": [
+    {
+      "number": "1",
+      "name": "Chris Pohl",
+      "year": "SR",
+      "position": "F",
+      "height": "6'8\"",
+      "captain": true
+    },
+    {
+      "number": "2",
+      "name": "Nick Hansen",
+      "year": "SR",
+      "position": "G",
+      "height": "5'11\"",
+      "captain": false
+    },
+    {
+      "number": "3",
+      "name": "Camden Kolstad",
+      "year": "JR",
+      "position": "G",
+      "height": "6'3\"",
+      "captain": true
+    },
+    {
+      "number": "4",
+      "name": "Will Ketterer",
+      "year": "JR",
+      "position": "F",
+      "height": "6'6\"",
+      "captain": false
+    },
+    {
+      "number": "10",
+      "name": "Vedder MacTaggert",
+      "year": "SR",
+      "position": "F",
+      "height": "6'6\"",
+      "captain": false
+    },
+    {
+      "number": "12",
+      "name": "Ben Jordan",
+      "year": "SR",
+      "position": "F",
+      "height": "6'5\"",
+      "captain": false
+    },
+    {
+      "number": "14",
+      "name": "Derek Ongna",
+      "year": "SO",
+      "position": "F",
+      "height": "6'4\"",
+      "captain": false
+    },
+    {
+      "number": "15",
+      "name": "Gavin Larson",
+      "year": "SO",
+      "position": "G",
+      "height": "6'2\"",
+      "captain": false
+    },
+    {
+      "number": "20",
+      "name": "Trevyn Freis",
+      "year": "JR",
+      "position": "G",
+      "height": "6'1\"",
+      "captain": false
+    },
+    {
+      "number": "22",
+      "name": "Levi Janssen",
+      "year": "SO",
+      "position": "G",
+      "height": "5'10\"",
+      "captain": false
+    },
+    {
+      "number": "24",
+      "name": "Valin Ramberg",
+      "year": "SR",
+      "position": "F",
+      "height": "6'7\"",
+      "captain": true
+    },
+    {
+      "number": "32",
+      "name": "Ethan Foemmel",
+      "year": "FR",
+      "position": "\u2014",
+      "height": "6'2\"",
+      "captain": false
+    }
+  ],
+  "stats": [
+    {
+      "num": "1",
+      "athlete": "Chris Pohl",
+      "year": "SR",
+      "fg": "55.0%",
+      "three": "42.8%",
+      "efg": "66.4%",
+      "ft": "82.5%",
+      "orpg": "0.9",
+      "drpg": "5.9",
+      "rpg": "6.7",
+      "apg": "3.6",
+      "spg": "0.7",
+      "bpg": "0.4",
+      "topg": "2.0",
+      "ato": "1.78",
+      "fpg": "1.5",
+      "ppg": "20.8"
+    },
+    {
+      "num": "2",
+      "athlete": "Nick Hansen",
+      "year": "SR",
+      "fg": "40.4%",
+      "three": "37.3%",
+      "efg": "57.0%",
+      "ft": "75.0%",
+      "orpg": "0.3",
+      "drpg": "1.8",
+      "rpg": "2.1",
+      "apg": "1.6",
+      "spg": "0.5",
+      "bpg": "0.0",
+      "topg": "0.9",
+      "ato": "1.83",
+      "fpg": "1.4",
+      "ppg": "2.6"
+    },
+    {
+      "num": "3",
+      "athlete": "Camden Kolstad",
+      "year": "JR",
+      "fg": "46.8%",
+      "three": "40.5%",
+      "efg": "55.9%",
+      "ft": "76.0%",
+      "orpg": "0.8",
+      "drpg": "2.5",
+      "rpg": "3.3",
+      "apg": "4.1",
+      "spg": "1.4",
+      "bpg": "0.1",
+      "topg": "2.1",
+      "ato": "1.93",
+      "fpg": "1.4",
+      "ppg": "9.1"
+    },
+    {
+      "num": "4",
+      "athlete": "Will Ketterer",
+      "year": "JR",
+      "fg": "46.4%",
+      "three": "33.3%",
+      "efg": "55.4%",
+      "ft": "33.3%",
+      "orpg": "0.5",
+      "drpg": "0.7",
+      "rpg": "1.3",
+      "apg": "0.3",
+      "spg": "0.3",
+      "bpg": "0.1",
+      "topg": "0.3",
+      "ato": "1.00",
+      "fpg": "0.5",
+      "ppg": "2.1"
+    },
+    {
+      "num": "10",
+      "athlete": "Vedder MacTaggert",
+      "year": "SR",
+      "fg": "46.9%",
+      "three": "39.5%",
+      "efg": "61.7%",
+      "ft": "73.3%",
+      "orpg": "0.7",
+      "drpg": "3.3",
+      "rpg": "4.0",
+      "apg": "0.9",
+      "spg": "0.7",
+      "bpg": "0.0",
+      "topg": "1.0",
+      "ato": "0.85",
+      "fpg": "1.2",
+      "ppg": "10.6"
+    },
+    {
+      "num": "12",
+      "athlete": "Ben Jordan",
+      "year": "SR",
+      "fg": "62.0%",
+      "three": "33.3%",
+      "efg": "64.6%",
+      "ft": "58.8%",
+      "orpg": "1.7",
+      "drpg": "2.9",
+      "rpg": "4.6",
+      "apg": "1.1",
+      "spg": "0.6",
+      "bpg": "0.2",
+      "topg": "1.0",
+      "ato": "1.19",
+      "fpg": "1.5",
+      "ppg": "4.1"
+    },
+    {
+      "num": "14",
+      "athlete": "Derek Ongna",
+      "year": "SO",
+      "fg": "46.4%",
+      "three": "22.2%",
+      "efg": "50.0%",
+      "ft": "64.7%",
+      "orpg": "0.3",
+      "drpg": "1.3",
+      "rpg": "1.6",
+      "apg": "0.7",
+      "spg": "0.2",
+      "bpg": "0.0",
+      "topg": "0.2",
+      "ato": "3.20",
+      "fpg": "0.7",
+      "ppg": "1.7"
+    },
+    {
+      "num": "15",
+      "athlete": "Gavin Larson",
+      "year": "SO",
+      "fg": "40.0%",
+      "three": "16.7%",
+      "efg": "43.3%",
+      "ft": "66.7%",
+      "orpg": "0.2",
+      "drpg": "0.5",
+      "rpg": "0.7",
+      "apg": "0.3",
+      "spg": "0.1",
+      "bpg": "0.0",
+      "topg": "0.3",
+      "ato": "1.25",
+      "fpg": "0.1",
+      "ppg": "1.0"
+    },
+    {
+      "num": "20",
+      "athlete": "Trevyn Freis",
+      "year": "JR",
+      "fg": "50.0%",
+      "three": "37.5%",
+      "efg": "62.5%",
+      "ft": "0.0%",
+      "orpg": "0.1",
+      "drpg": "0.4",
+      "rpg": "0.5",
+      "apg": "0.1",
+      "spg": "0.1",
+      "bpg": "0.1",
+      "topg": "0.1",
+      "ato": "0.50",
+      "fpg": "0.5",
+      "ppg": "1.1"
+    },
+    {
+      "num": "22",
+      "athlete": "Levi Janssen",
+      "year": "SO",
+      "fg": "40.0%",
+      "three": "32.3%",
+      "efg": "49.1%",
+      "ft": "83.3%",
+      "orpg": "0.2",
+      "drpg": "0.3",
+      "rpg": "0.5",
+      "apg": "0.5",
+      "spg": "0.2",
+      "bpg": "0.0",
+      "topg": "0.6",
+      "ato": "0.80",
+      "fpg": "0.6",
+      "ppg": "2.3"
+    },
+    {
+      "num": "24",
+      "athlete": "Valin Ramberg",
+      "year": "SR",
+      "fg": "60.3%",
+      "three": "36.7%",
+      "efg": "64.4%",
+      "ft": "66.0%",
+      "orpg": "0.7",
+      "drpg": "4.1",
+      "rpg": "4.8",
+      "apg": "3.6",
+      "spg": "1.3",
+      "bpg": "0.9",
+      "topg": "2.6",
+      "ato": "1.42",
+      "fpg": "2.2",
+      "ppg": "15.1"
+    },
+    {
+      "num": "32",
+      "athlete": "Ethan Foemmel",
+      "year": "FR",
+      "fg": "50.0%",
+      "three": "0.0%",
+      "efg": "50.0%",
+      "ft": "0.0%",
+      "orpg": "0.2",
+      "drpg": "0.0",
+      "rpg": "0.2",
+      "apg": "0.0",
+      "spg": "0.3",
+      "bpg": "0.0",
+      "topg": "0.0",
+      "ato": "0.00",
+      "fpg": "0.2",
+      "ppg": "0.3"
+    }
+  ],
+  "standings": [
+    {
+      "team": "D.C. Everest",
+      "conf": "8-2",
+      "st": "L1",
+      "overall": "22-4",
+      "pct": ".846"
+    },
+    {
+      "team": "Marshfield",
+      "conf": "8-2",
+      "st": "L1",
+      "overall": "21-6",
+      "pct": ".778"
+    },
+    {
+      "team": "Stevens Point",
+      "conf": "8-2",
+      "st": "L1",
+      "overall": "19-7",
+      "pct": ".731"
+    },
+    {
+      "team": "Wausau West",
+      "conf": "2-7",
+      "st": "L1",
+      "overall": "11-15",
+      "pct": ".423"
+    },
+    {
+      "team": "Wausau East",
+      "conf": "2-7",
+      "st": "L1",
+      "overall": "6-20",
+      "pct": ".231"
+    },
+    {
+      "team": "Wisconsin Rapids Lincoln",
+      "conf": "1-9",
+      "st": "L1",
+      "overall": "6-20",
+      "pct": ".231"
+    }
+  ],
+  "team": {
+    "school": "Marshfield",
+    "nickname": "Tigers",
+    "sport": "Boys Basketball",
+    "season": "2025-26",
+    "level": "Varsity",
+    "division": "Division 1",
+    "conference": "Wisconsin Valley",
+    "district": "D1 Sectional 1",
+    "region": "North Central",
+    "headCoach": "Chris Fischer",
+    "enrollment": "1188",
+    "record": "21-6",
+    "conferenceRecord": "8-2"
+  }
+};
+
+const logo = "assets/marshfield-tigers.png";
+
+function initials(name) {
+  return name.split(" ").map(w => w[0]).join("").slice(0,2).toUpperCase();
+}
+
+function renderSchedule(filter = "all") {
+  const list = document.getElementById("scheduleList");
+  const games = data.schedule.filter(g => {
+    if (filter === "conference") return g.conference;
+    if (filter === "postseason") return (g.note || "").includes("D1 Sectional");
+    return true;
+  });
+
+  list.innerHTML = games.map(g => {
+    const [ms, opp] = g.score.split("-");
+    const homeMarshfield = g.site === "Home";
+    const neutral = g.site === "Neutral";
+    const firstTeam = homeMarshfield ? g.opponent : "Marshfield Tigers";
+    const secondTeam = homeMarshfield ? "Marshfield Tigers" : g.opponent;
+    const firstScore = homeMarshfield ? opp : ms;
+    const secondScore = homeMarshfield ? ms : opp;
+    return `
+      <article class="game-row ${g.result}">
+        <div class="teams">
+          <div class="team-line">
+            ${firstTeam === "Marshfield Tigers" ? `<img src="${logo}">` : `<div class="placeholder-logo">${initials(firstTeam)}</div>`}
+            <strong>${firstTeam}</strong><span>${homeMarshfield ? "Away" : neutral ? "Neutral" : "Marshfield"}</span>
+          </div>
+          <div class="team-line">
+            ${secondTeam === "Marshfield Tigers" ? `<img src="${logo}">` : `<div class="placeholder-logo">${initials(secondTeam)}</div>`}
+            <strong>${secondTeam}</strong><span>${homeMarshfield ? "Marshfield" : g.site}</span>
+          </div>
+          ${g.note ? `<div class="note">${g.note}</div>` : ""}
+        </div>
+        <div class="score"><span>${firstScore}</span><span>${secondScore}</span></div>
+        <div class="game-info"><strong>${g.date}</strong><span>${g.location}</span><b>${g.result === "W" ? "Win" : "Loss"}</b></div>
+      </article>
+    `;
+  }).join("");
+}
+
+function renderRoster() {
+  document.getElementById("rosterGrid").innerHTML = data.roster.map(p => `
+    <article class="player-card">
+      <div class="num">#${p.number}</div>
+      <strong>${p.name}</strong>
+      <span>${p.year} · ${p.position} · ${p.height}</span>
+      ${p.captain ? `<em class="captain">Captain</em>` : ""}
+    </article>
+  `).join("");
+}
+
+function renderStats() {
+  const leaders = [
+    {label:"Points", stat:"20.8 PPG", name:"Chris Pohl"},
+    {label:"Rebounds", stat:"6.7 RPG", name:"Chris Pohl"},
+    {label:"Assists", stat:"4.1 APG", name:"Camden Kolstad"},
+    {label:"Steals", stat:"1.4 SPG", name:"Camden Kolstad"}
+  ];
+  document.getElementById("leaderGrid").innerHTML = leaders.map(l => `
+    <article><span>${l.label}</span><strong>${l.name}</strong><b>${l.stat}</b></article>
+  `).join("");
+
+  document.getElementById("statsRows").innerHTML = data.stats.map(s => `
+    <tr>
+      <td>#${s.num}</td><td><strong>${s.athlete}</strong></td><td>${s.year}</td>
+      <td>${s.ppg}</td><td>${s.rpg}</td><td>${s.apg}</td><td>${s.spg}</td><td>${s.bpg}</td>
+      <td>${s.fg}</td><td>${s.three}</td><td>${s.ft}</td><td>${s.ato}</td>
+    </tr>
+  `).join("");
+}
+
+function renderStandings() {
+  document.getElementById("standingsList").innerHTML = data.standings.map((s,i) => `
+    <div class="${s.team === "Marshfield" ? "highlight" : ""}">
+      <strong>${i+1}</strong><span>${s.team}</span><b>${s.conf}</b><b>${s.overall}</b><b>${s.pct}</b>
+    </div>
+  `).join("");
+}
+
+document.querySelectorAll(".tab").forEach(button => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    document.querySelectorAll(".panel").forEach(p => p.classList.remove("active-panel"));
+    button.classList.add("active");
+    document.getElementById(button.dataset.tab).classList.add("active-panel");
+  });
+});
+
+document.querySelectorAll(".pill").forEach(button => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
+    button.classList.add("active");
+    renderSchedule(button.dataset.filter);
+  });
+});
+
+document.getElementById("sourceBtn").addEventListener("click", () => {
+  window.open("https://www.gobound.com/wi/wiaa/boysbasketball/2025-26/marshfield/v", "_blank");
+});
+
+renderSchedule();
+renderRoster();
+renderStats();
+renderStandings();
