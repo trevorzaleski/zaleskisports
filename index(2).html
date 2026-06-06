@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marshfield Tigers Boys Basketball | Zaleski Sports</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="global-header">
+    <div class="zs-mark">ZS</div>
+    <nav>
+      <a>Live Games</a>
+      <a>Schedule</a>
+      <a class="active">Teams</a>
+      <a>Scores</a>
+    </nav>
+  </header>
+
+  <section class="team-hero">
+    <div class="angle angle-one"></div>
+    <div class="angle angle-two"></div>
+    <div class="team-identity">
+      <div class="logo-shell"><img src="assets/marshfield-tigers.png" alt="Marshfield Tigers logo" /></div>
+      <div>
+        <p class="eyebrow">Wisconsin Valley Conference</p>
+        <h1>Marshfield Tigers</h1>
+        <p class="sport">Boys Basketball · Varsity · 2025-26</p>
+        <div class="meta-row">
+          <span>21-6 Overall</span><span>8-2 Conference</span><span>Division 1</span><span>Head Coach: Chris Fischer</span>
+        </div>
+      </div>
+    </div>
+    <aside class="next-game-card">
+      <p class="card-label">Season Summary</p>
+      <div class="summary-grid">
+        <div><strong>67.6</strong><span>PPG</span></div>
+        <div><strong>30.5</strong><span>RPG</span></div>
+        <div><strong>16.3</strong><span>APG</span></div>
+      </div>
+      <button id="sourceBtn">GoBound Source Data</button>
+    </aside>
+  </section>
+
+  <main>
+    <div class="tabs">
+      <button class="tab active" data-tab="schedule">Schedule</button>
+      <button class="tab" data-tab="roster">Roster</button>
+      <button class="tab" data-tab="staff">Staff</button>
+      <button class="tab" data-tab="stats">Stats</button>
+      <button class="tab" data-tab="standings">Standings</button>
+    </div>
+
+    <section id="schedule" class="panel active-panel">
+      <div class="panel-header">
+        <div><p class="section-kicker">Schedule</p><h2>Full Schedule & Results</h2></div>
+        <div class="filter-row">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="conference">Conference</button>
+          <button class="pill" data-filter="postseason">Postseason</button>
+        </div>
+      </div>
+      <div class="score-list" id="scheduleList"></div>
+    </section>
+
+    <section id="roster" class="panel">
+      <div class="panel-header"><div><p class="section-kicker">Roster</p><h2>Varsity Roster</h2></div></div>
+      <div class="card-grid" id="rosterGrid"></div>
+    </section>
+
+    <section id="staff" class="panel">
+      <div class="panel-header"><div><p class="section-kicker">Staff</p><h2>Team Staff & Info</h2></div></div>
+      <div class="info-grid">
+        <article><span>Head Coach</span><strong>Chris Fischer</strong></article>
+        <article><span>Level</span><strong>Varsity</strong></article>
+        <article><span>Division</span><strong>Division 1</strong></article>
+        <article><span>District</span><strong>D1 Sectional 1</strong></article>
+        <article><span>Region</span><strong>North Central</strong></article>
+        <article><span>Enrollment</span><strong>1188</strong></article>
+      </div>
+    </section>
+
+    <section id="stats" class="panel">
+      <div class="panel-header"><div><p class="section-kicker">Stats</p><h2>Full Player Stats</h2></div></div>
+      <div class="leader-grid" id="leaderGrid"></div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Athlete</th><th>YR</th><th>PPG</th><th>RPG</th><th>APG</th><th>SPG</th><th>BPG</th><th>FG%</th><th>3P%</th><th>FT%</th><th>A/TO</th></tr>
+          </thead>
+          <tbody id="statsRows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="standings" class="panel">
+      <div class="panel-header"><div><p class="section-kicker">Conference</p><h2>Wisconsin Valley Standings</h2></div></div>
+      <div class="standings" id="standingsList"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
