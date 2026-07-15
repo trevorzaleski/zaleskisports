@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Producers | Live Score Bug Feeds | Zaleski Sports</title>
+  <link rel="stylesheet" href="producers.css" />
+</head>
+<body>
+  <header class="global-header">
+    <div class="zs-mark">ZS</div>
+    <nav>
+      <a>Live Games</a>
+      <a>Schedule</a>
+      <a>Teams</a>
+      <a>Scores</a>
+      <a class="active">Producers</a>
+    </nav>
+  </header>
+
+  <section class="producers-hero">
+    <div>
+      <p class="eyebrow">Production Control</p>
+      <h1>Producers</h1>
+      <p class="sub">Live score bug feed monitor &mdash; every active bug, its data feed, and when it last updated.</p>
+    </div>
+    <aside class="health-card">
+      <p class="card-label">Feed Health</p>
+      <div class="health-grid">
+        <div><strong id="countLive">0</strong><span>Live</span></div>
+        <div><strong id="countStale">0</strong><span>Stale</span></div>
+        <div><strong id="countDown">0</strong><span>Down</span></div>
+      </div>
+      <p class="clock-line">Board time: <span id="boardClock">--:--:--</span></p>
+    </aside>
+  </section>
+
+  <main>
+    <div id="demoBanner" class="demo-banner">
+      <strong>DEMO DATA</strong> &mdash; No production feed endpoints are configured yet.
+      Feeds below are simulated so you can see the board working. To go live, set each
+      feed's <code>url</code> in <code>producers.js</code> (FEEDS config at the top of the file).
+    </div>
+
+    <section class="panel active-panel">
+      <div class="panel-header">
+        <div>
+          <p class="section-kicker">Score Bugs</p>
+          <h2>Live Score Bug Feeds</h2>
+        </div>
+        <div class="filter-row">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="live">Live</button>
+          <button class="pill" data-filter="issues">Issues</button>
+        </div>
+      </div>
+      <div class="feed-grid" id="feedGrid"></div>
+    </section>
+  </main>
+
+  <script src="producers.js"></script>
+</body>
+</html>
